@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnam Photo Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+  <main class="container">
+    <header>
+      <p class="eyebrow">INTERACTIVITY WITH JAVASCRIPT</p>
+      <h1>Vietnam Photo Gallery</h1>
+      <p class="intro">Hover over a photo or use Tab to focus it. Move the mouse away or press Tab again to reset the preview.</p>
+    </header>
+
+    <div id="image" class="preview" aria-live="polite">
+      Hover over an image below to display here.
+    </div>
+
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Explore the gallery</h2>
+      <div class="gallery">
+                <figure onmouseover="upDate(this.querySelector('img'))" onmouseleave="undo()" onfocus="upDate(this.querySelector('img'))" onblur="undo()">
+          <img src="images/halong.svg" alt="Ha Long Bay with green mountains and blue water">
+        </figure>
+                <figure onmouseover="upDate(this.querySelector('img'))" onmouseleave="undo()" onfocus="upDate(this.querySelector('img'))" onblur="undo()">
+          <img src="images/hoian.svg" alt="Hoi An old town with colorful lanterns">
+        </figure>
+                <figure onmouseover="upDate(this.querySelector('img'))" onmouseleave="undo()" onfocus="upDate(this.querySelector('img'))" onblur="undo()">
+          <img src="images/dalat.svg" alt="Da Lat pine forest and mountain landscape">
+        </figure>
+                <figure onmouseover="upDate(this.querySelector('img'))" onmouseleave="undo()" onfocus="upDate(this.querySelector('img'))" onblur="undo()">
+          <img src="images/saigon.svg" alt="Ho Chi Minh City skyline at sunset">
+        </figure>
+                <figure onmouseover="upDate(this.querySelector('img'))" onmouseleave="undo()" onfocus="upDate(this.querySelector('img'))" onblur="undo()">
+          <img src="images/sapa.svg" alt="Sa Pa green rice terraces surrounded by mountains">
+        </figure>
+                <figure onmouseover="upDate(this.querySelector('img'))" onmouseleave="undo()" onfocus="upDate(this.querySelector('img'))" onblur="undo()">
+          <img src="images/beach.svg" alt="Vietnam tropical beach with palm trees and turquoise sea">
+        </figure>
+      </div>
+    </section>
+    <footer>JavaScript Interactive Photo Gallery · University practice project</footer>
+  </main>
+</body>
+</html>
